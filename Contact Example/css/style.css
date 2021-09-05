@@ -1,0 +1,96 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Page container styles */
+.page-container{
+    display: flex;
+    justify-content: center;
+  }
+
+/* Button */
+.btn{
+    background-color: #F26101;
+    color: #003354;
+    font-size: 1.25em;
+    padding: 10px 25px;
+    border: 1px solid #F26101;
+    border-radius: 2px;
+    outline: none;
+}
+
+.btn:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Form */
+.form > .form-group{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form input{
+    font-size: 1.5rem;
+    color: #003354;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 3px solid #003354;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.form input:focus{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #F26101;
+}
+
+.form textarea{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    border-radius: 3px;
+    border: 3px solid #003354;
+    font-size: 1.5rem;
+    color: #003354;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s;
+}
+
+.form textarea:focus{
+    outline: none;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+    border: 3px solid #F26101;
+}
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
+    color: #003354;
+}
+
+.form label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+    color: #F26101;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form input:focus + label, .form textarea:focus + label{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(1rem);
+}
+
+.form input:focus::-webkit-input-placeholder, .form textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+}
