@@ -4,5 +4,34 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
+}
 
+:root{
+    --secondary:#003354;
+    --primary:#91BED4;
+    --BGcolour1:#d9e8f5;
+    --BGcolour2:#999;
+    --CTA:#f26101;
+    --BGpage:#e0e0e0;
+}
+
+body{
+    background-color: var(--BGpage);
+}
+
+.logo{
+    height: 50px;
+}
+
+.container{
+    display:flex;
+    justify-content: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-container{
+    border-bottom: 1px solid var(--BGcolour2);
 }
