@@ -36,22 +36,24 @@ p {
 h1 {
 	font-size: 3rem;
 	font-weight: 700;
-	font-family: 'Bauhaus 93', sans-serif;
 }
 
 h2 {
 	font-size: 2.5rem;
 	font-weight: 700;
-	font-family: 'Bauhaus 93', sans-serif;
 }
 
 p {
 	font-size: 2rem;
 }
 
-span {
+.i {
 	color: var(--CTA);
 	font-weight: 700;
+}
+
+.budget{
+	font-family: 'Bauhaus 93';
 }
 
 .logo {
