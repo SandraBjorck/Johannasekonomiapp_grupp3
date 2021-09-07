@@ -1,121 +1,130 @@
+@font-face {
+	font-family: 'Bauhaus 93';
+	src: url('/fonts/@font-face/Bauhaus.woff2') format('woff2'),
+		url('/fonts/@font-face/Bauhaus.woff') format('woff'),
+		url('/fonts/@font-face/Bauhaus.ttf') format('truetype');
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  --secondary: #003354;
-  --primary: #91bed4;
-  --BGcolour1: #d9e8f5;
-  --BGcolour2: #999;
-  --CTA: #f26101;
-  --BGpage: #e0e0e0;
+	--secondary: #003354;
+	--primary: #91bed4;
+	--BGcolour1: #d9e8f5;
+	--BGcolour2: #999;
+	--CTA: #f26101;
+	--BGpage: #e0e0e0;
 }
 
 body {
-  background-color: var(--BGpage);
-  font-family: "Montserrat", sans-serif;
+	background-color: var(--BGpage);
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1,
 h2,
 p {
-  color: var(--secondary);
+	color: var(--secondary);
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
+	font-size: 3rem;
+	font-weight: 700;
+	font-family: 'Bauhaus 93', sans-serif;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: 'Bauhaus 93', sans-serif;
 }
 
 p {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 span {
-  color: var(--CTA);
-  font-weight: 700;
+	color: var(--CTA);
+	font-weight: 700;
 }
 
 .logo {
-  height: 3rem;
+	height: 3rem;
 }
 
 .container {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .nav-container {
-  border-bottom: 1px solid var(--BGcolour2);
+	border-bottom: 1px solid var(--BGcolour2);
 }
 
 /*hero-related*/
 
 .hero {
-  display: flex;
-  max-width: 1100px;
-  margin: 3rem auto;
+	display: flex;
+	max-width: 1100px;
+	margin: 3rem auto;
 }
 
 .left-column,
 .right-column {
-  width: 50%;
+	width: 50%;
 }
 
 .left-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .hero-buttons {
-  display: flex;
-  gap: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
 button {
-  color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 5rem;
-  font-size: 1.3rem;
-  border: none;
-  box-shadow: 10px 10px 34px 0px rgba(0, 0, 0, 0.4);
-  text-align: center;
+	color: #fff;
+	padding: 1rem 3rem;
+	border-radius: 5rem;
+	font-size: 1.3rem;
+	border: none;
+	box-shadow: 10px 10px 34px 0px rgba(0, 0, 0, 0.4);
+	text-align: center;
 }
 
 button:hover {
-  box-shadow: none;
-  filter: brightness(1.1);
+	box-shadow: none;
+	filter: brightness(1.1);
 }
 
 button:active {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .btn-signup {
-  background-color: var(--CTA);
+	background-color: var(--CTA);
 }
 .btn-login {
-  background-color: var(--secondary);
+	background-color: var(--secondary);
 }
 
 .hero-image {
-  width: 100%;
+	width: 100%;
 }
 
 .hero-h2 {
-  text-align: center;
+	text-align: center;
 }
