@@ -52,7 +52,7 @@ p {
 	font-weight: 700;
 }
 
-.budget{
+.budget {
 	font-family: 'Bauhaus 93';
 }
 
@@ -75,7 +75,8 @@ p {
 
 /*hero-related*/
 
-.hero {
+.hero,
+.piggybank {
 	display: flex;
 	max-width: 1100px;
 	margin: 3rem auto;
@@ -86,7 +87,8 @@ p {
 	width: 50%;
 }
 
-.left-column {
+.left-column,
+.right-column {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -129,4 +131,15 @@ button:active {
 
 .hero-h2 {
 	text-align: center;
+}
+
+/* piggybank section */
+.piggybank {
+	padding: 3rem 0;
+}
+.piggybank-container {
+	background-color: var(--BGcolour1);
+}
+.piggybank .right-column {
+	justify-content: space-around;
 }

@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<title>iBudget</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <title>iBudget</title>
-</head>
+	<body>
+		<div class="nav-container">
+			<nav>
+				<div class="container">
+					<img
+						class="logo"
+						src="images/iBudget_Logo_2.svg"
+						alt="Company logo"
+					/>
+				</div>
+			</nav>
+		</div>
+		<!--Hero section-->
+		<section>
+			<div class="hero">
+				<div class="left-column">
+					<h1>
+						Tired of never<br />
+						knowing how <br />much you've <br />spent?
+					</h1>
+					<p>
+						Sign up for <span class="i">i</span
+						><span class="budget">Budget</span> now!
+					</p>
+					<div class="hero-buttons">
+						<button class="btn-signup">Sign Up</button>
+						<button class="btn-login">Log in</button>
+					</div>
+				</div>
+				<div class="right-column">
+					<img
+						class="hero-image"
+						src="images/LandingPageIllustration.svg"
+						alt="Man reading barchart"
+					/>
+				</div>
+			</div>
+			<h2 class="hero-h2">
+				<span class="i">i</span><span class="budget">Budget</span> provides
+				full visibility on all your expenses
+			</h2>
+		</section>
 
-<body>
-  <div class="nav-container">
-    <nav>
-      <div class="container">
-        <img class="logo" src="images/iBudget_Logo_2.svg" alt="Company logo" />
-      </div>
-    </nav>
-  </div>
-  <!--Hero section-->
-  <section>
-    <div class="hero">
-      <div class="left-column">
-        <h1>
-          Tired of never<br />
-          knowing how <br />much you've <br />spent?
-        </h1>
-        <p>Sign up for <span class="i">i</span><span class="budget">Budget</span> now!</p>
-        <div class="hero-buttons">
-          <button class="btn-signup">Sign Up</button>
-          <button class="btn-login">Log in</button>
-        </div>
-      </div>
-      <div class="right-column">
-        <img class="hero-image" src="images/LandingPageIllustration.svg" alt="Man reading barchart" />
-      </div>
-    </div>
-    <h2 class="hero-h2">
-      <span class="i">i</span><span class="budget">Budget</span> provides full visibility on all your expenses
-    </h2>
-  </section>
+		<!-- piggybank section -->
 
-  <script src="js/index.js"></script>
-</body>
+		<section>
+			<div class="piggybank-container">
+				<div class="piggybank">
+					<div class="left-column">
+						<img
+							class="hero-image"
+							src="images/SavingIllustration.svg"
+							alt="man sitting on piggybank, holding a coin"
+						/>
+					</div>
+					<div class="right-column">
+						<h1>Want to have total control of your saving?</h1>
+						<p>
+							<span class="i">i</span><span class="budget">Budget</span> can help
+							you set realistic goals
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<script src="js/index.js"></script>
+	</body>
 </html>
