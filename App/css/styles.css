@@ -75,19 +75,19 @@ p {
 }
 
 /*hero-related*/
-.first-page-container{
+.first-page-container {
 	width: 100%;
 	height: 100vh;
 }
 
-.hero-section{
+.hero-section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: calc(100% - 5rem);
 }
 
-.hero-left-column{
+.hero-left-column {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -97,10 +97,11 @@ p {
 .hero,
 .piggybank,
 .spending,
-.sharing {
+.sharing,
+.responsive {
 	display: flex;
 	max-width: 1100px;
-	margin: 3rem auto;
+	margin: 0 auto;
 }
 
 .left-column,
@@ -149,6 +150,7 @@ button:active {
 }
 
 .hero-h2 {
+	margin-top: 3rem;
 	text-align: center;
 }
 
@@ -183,3 +185,24 @@ button:active {
 	justify-content: space-around;
 }
 
+/*spending section*/
+
+.responsive {
+	padding: 3rem 0;
+}
+
+.responsive .left-column {
+	justify-content: space-around;
+}
+
+/* section containers 50% height and centring of content  */
+
+.piggybank-container,
+.spending-container,
+.sharing-container,
+.responsive-container {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
