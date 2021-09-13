@@ -100,7 +100,9 @@ p {
 .sharing,
 .responsive,
 .testemonials,
-.card-container {
+.card-container,
+footer
+{
 	display: flex;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -270,4 +272,13 @@ button:active {
 	font-size: 1rem;
 	height: 80px;
 	margin: 10px;
+}
+
+/* footer */
+.footer-container {
+	border-top: 1px solid var(--BGcolour2);
+}
+
+footer {
+	justify-content: space-between;
 }
