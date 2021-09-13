@@ -235,11 +235,12 @@ button:active {
 
 .card{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: auto;
 	grid-template-areas: 
 	"pic tit"
     "rec rec";
+	grid-template-columns: 1fr 1fr;
+	/* grid-auto-rows: auto; */
+	
                        
 	width: 300px;
 	height: 200px;
@@ -252,19 +253,21 @@ button:active {
 }
 
 .card img{
-	grid-area: 'pic';
+	grid-area: pic;
 	width: 130px;
 	border-radius: 40px;
 	margin: 10px;
 }
 
 .card h3{
-	grid-area: 'tit';
+	color: var(--secondary);
+	grid-area: tit;
 	margin: 10px;
 }
 
 .card p{
-	grid-area: 'rec';
+	grid-area: rec;
 	font-size: 1rem;
-	border:solid;
+	height: 80px;
+	margin: 10px;
 }
