@@ -54,6 +54,7 @@ p {
 
 .budget {
 	font-family: 'Bauhaus 93';
+	color: var(--secondary);
 }
 
 /* nav */
@@ -159,14 +160,40 @@ button:active {
 }
 
 /* piggybank section */
+
+.piggybank-section{
+	position: relative; /* Waves */
+}
+
+/* https://app.haikei.app/ */
+.waves{ /* Waves */
+	aspect-ratio: 960/200;
+	background-image: url(../images/layered-waves-new.svg);
+	position: absolute;
+	top: -110px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	/* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+	background-size: cover;
+}
+
 .piggybank {
 	padding: 3rem 0;
 }
+
 .piggybank-container {
 	background-color: var(--BGcolour1);
 }
+
 .piggybank .right-column {
 	justify-content: space-around;
+	z-index: 1;
+}
+
+.piggybank .left-column {
+	z-index: 1;
 }
 
 /*spending section*/
@@ -277,6 +304,8 @@ button:active {
 /* footer */
 .footer-container {
 	border-top: 1px solid var(--BGcolour2);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 footer {
