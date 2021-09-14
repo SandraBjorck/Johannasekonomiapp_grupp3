@@ -102,8 +102,7 @@ p {
 .responsive,
 .testemonials,
 .card-container,
-footer
-{
+footer {
 	display: flex;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -161,12 +160,17 @@ button:active {
 
 /* piggybank section */
 
-.piggybank-section{
+.section-image {
+	width: 100%;
+}
+
+.piggybank-section {
 	position: relative; /* Waves */
 }
 
 /* https://app.haikei.app/ */
-.waves{ /* Waves */
+.waves {
+	/* Waves */
 	aspect-ratio: 960/200;
 	background-image: url(../images/layered-waves-new.svg);
 	position: absolute;
@@ -174,7 +178,7 @@ button:active {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
-	
+
 	/* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 	background-size: cover;
 }
@@ -241,64 +245,64 @@ button:active {
 }
 
 /* Testemonials */
-.testemonials-container{
+.testemonials-container {
 	background-color: #6f7099;
-	
 }
 
-.testemonials{
+.testemonials {
 	flex-direction: column;
 	text-align: center;
 	justify-content: space-evenly;
 	height: 100%;
 }
 
-.testemonials h2, .testemonials p{
-	color:white;
+.testemonials h2,
+.testemonials p {
+	color: white;
 }
 
 /* Testimonials cards */
-.card-container{
+.card-container {
 	justify-content: space-between;
 }
 
-.card{
+.card {
 	display: grid;
-	grid-template-areas: 
-	"pic tit"
-    "rec rec";
+	grid-template-areas:
+		'pic tit'
+		'rec rec';
 	grid-template-columns: 1fr 1fr;
-	/* grid-auto-rows: auto; */
-	
-                       
-	width: 300px;
+
+	place-items: center;
+	width: 320px;
 	height: 200px;
 	/* neumorphism */
 	border-radius: 10px;
 	background: #e0e0e0;
-	box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
-	
+	box-shadow: 20px 20px 45px #bebebe, -20px -20px 45px #ffffff;
+	padding: 1rem;
 }
 
-.card img{
+.card img {
 	grid-area: pic;
+	border: 4px solid var(--primary);
 	width: 130px;
 	border-radius: 40px;
-	margin: 10px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-.card h3{
+.card h3 {
 	color: var(--secondary);
 	grid-area: tit;
-	margin: 10px;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
-.card p{
+.card p {
 	grid-area: rec;
 	font-size: 1rem;
-	height: 80px;
-	margin: 10px;
+	height: 100%;
+	padding-top: 1rem;
+	text-align: center;
 }
 
 /* footer */
@@ -310,4 +314,5 @@ button:active {
 
 footer {
 	justify-content: space-between;
+	align-items: center;
 }
