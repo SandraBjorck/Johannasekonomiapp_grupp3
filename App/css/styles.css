@@ -131,6 +131,7 @@ button {
 	box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
 	text-align: center;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 button:hover {
@@ -161,7 +162,7 @@ button:active {
 /* piggybank section */
 
 .section-image {
-	width: 100%;
+	width: 75%;
 }
 
 .piggybank-section {
@@ -315,4 +316,186 @@ button:active {
 footer {
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media (max-width: 1200px) {
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	.hero,
+	.piggybank,
+	.logo-container,
+	.spending,
+	.sharing,
+	.responsive,
+	.testemonials,
+	footer,
+	.card-container {
+		max-width: 1000px;
+	}
+
+	.waves {
+		top: -75px;
+	}
+
+	.card {
+		width: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.hero,
+	.piggybank,
+	.spending,
+	.sharing,
+	.responsive,
+	.testemonials,
+	.card-container,
+	.logo-container,
+	footer {
+		max-width: 600px;
+	}
+
+	button {
+		padding: 0.6rem 1.5rem;
+		font-size: 0.75rem;
+	}
+
+	.waves {
+		top: -50px;
+	}
+
+	.section-image {
+		width: 85%;
+	}
+
+	.card-container {
+		height: auto;
+		flex-direction: column;
+		margin: 2rem auto;
+	}
+
+	.card {
+		width: 400px;
+		margin: 2rem 0;
+	}
+}
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.hero,
+	.piggybank,
+	.spending,
+	.sharing,
+	.responsive,
+	.testemonials,
+	footer,
+	.logo-container,
+	.hero-container {
+		flex-direction: column;
+		align-items: center;
+		max-width: 280px;
+		gap: 1rem;
+	}
+
+	.logo-container {
+		align-items: center;
+		padding: 0.5rem;
+	}
+
+	.logo {
+		max-height: 2rem;
+	}
+
+	.hero-left-column {
+		width: 100%;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.hero-h2 {
+		margin-top: 1rem;
+	}
+
+	.waves {
+		top: -25px;
+	}
+
+	.right-column,
+	.left-column {
+		width: 65%;
+		gap: 1rem;
+	}
+
+	.piggybank-container,
+	.spending-container,
+	.sharing-container,
+	.responsive-container,
+	.testemonials-container,
+	.card-container {
+		height: 65vh;
+	}
+
+	.card-container {
+		height: auto;
+		flex-direction: column;
+		margin: 2rem auto;
+	}
+
+	.card {
+		width: 260px;
+		margin: 2rem 0;
+	}
+
+	.card img {
+		width: 110px;
+	}
+
+	.card h3 {
+		font-size: 1rem;
+	}
+
+	.card p {
+		font-size: 0.85rem;
+	}
 }
