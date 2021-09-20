@@ -160,6 +160,10 @@ button:active {
 	text-align: center;
 }
 
+.arrow {
+	width: 50px;
+}
+
 /* piggybank section */
 
 .section-image {
@@ -342,16 +346,6 @@ footer {
 		gap: 1rem;
 		margin-bottom: 1rem;
 		justify-content: space-evenly;
-	}
-
-	/* .arrow-container{
-		width: 2rem;
-		height: 2rem;
-	} */
-
-	.arrow{
-		width: 100px;
-		
 	}
 
 	.waves {
