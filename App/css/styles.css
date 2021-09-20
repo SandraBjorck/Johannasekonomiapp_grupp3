@@ -344,6 +344,16 @@ footer {
 		justify-content: space-evenly;
 	}
 
+	/* .arrow-container{
+		width: 2rem;
+		height: 2rem;
+	} */
+
+	.arrow{
+		width: 100px;
+		
+	}
+
 	.waves {
 		top: -75px;
 	}
