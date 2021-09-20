@@ -1,62 +1,3 @@
-@font-face {
-  font-family: "Bauhaus 93";
-  src: url("fonts/@font-face/Bauhaus.woff2") format("woff2"),
-    url("fonts/@font-face/Bauhaus.woff") format("woff"),
-    url("fonts/@font-face/Bauhaus.ttf") format("truetype");
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --secondary: #003354;
-  --primary: #91bed4;
-  --BGcolour1: #d9e8f5;
-  --BGcolour2: #999;
-  --CTA: #f26101;
-  --BGpage: #e0e0e0;
-}
-
-body {
-  background-color: var(--BGpage);
-  font-family: "Montserrat", sans-serif;
-}
-
-h1,
-h2,
-p {
-  color: var(--secondary);
-}
-
-h1 {
-  /* Clamp gives us the ability to make our font sizing responsive with setting a min-size, max-width and a size that the font want's to be in  */
-  font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-  font-weight: 700;
-}
-
-h2 {
-  font-size: clamp(1.2rem, 2.5vw + 1rem, 2.5rem);
-  font-weight: 700;
-}
-
-p {
-  font-size: clamp(1rem, 2.5vw, 2rem);
-}
-
-.i {
-  color: var(--CTA);
-  font-weight: 700;
-}
-
-.budget {
-  font-family: "Bauhaus 93";
-  color: var(--secondary);
-}
 
 /* nav */
 .logo {
@@ -142,6 +83,11 @@ button:hover {
 button:active {
   box-shadow: none;
   transform: scale(0.95);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .btn-signup {

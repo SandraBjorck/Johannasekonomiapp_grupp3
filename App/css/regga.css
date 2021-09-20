@@ -1,9 +1,5 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 /* Page container styles */
-.page-container{
+.registrerings-container{
     display: flex;
     justify-content: center;
   }
