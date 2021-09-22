@@ -90,4 +90,8 @@ a{
     font-family: "Bauhaus 93";
     color: var(--secondary);
   }
+
+  .noscroll{
+    overflow: hidden;
+  }
   

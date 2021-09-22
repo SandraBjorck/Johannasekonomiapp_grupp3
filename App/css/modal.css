@@ -15,32 +15,32 @@
     top: 0;
     height: 100vh;
     width: 100vw;
-	display: flex; 
+	margin:0 auto;
 	justify-content: center;
 	align-items: center;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .reggaModal-content{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	height: 100%;
+}
+
+/* Page container styles */
+.registrerings-container {
     background-color: #f4f4f4;
-    padding: 30px 0;
+    padding: 30px ;
 	padding-bottom: 60px;
-    width: 30%;
-	
-	
+    width: 30%;		
 	border-radius: 1rem;
     box-shadow:
     0 5px 8px 0 rgba(0,0,0,0.2),
     0 7px 20px 0 rgba(0,0,0,0.17);
     animation-name: modalopen;
     animation-duration: 1s;
-}
-
-/* Page container styles */
-.registrerings-container {
-	display: flex;
-	justify-content: center;
 }
 
 
@@ -69,35 +69,11 @@
 	border-bottom: 3px solid #f26101;
 }
 
-.form textarea {
-	margin-top: 20px;
-	width: 100%;
-	height: 250px;
-	border-radius: 3px;
-	border: 3px solid #003354;
-	font-size: 1.5rem;
-	color: #003354;
-	font-family: inherit;
-	padding: 1.5rem 2rem;
-	transition: all 0.3s;
-}
-
-.form textarea:focus {
-	outline: none;
-	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
-	border: 3px solid #f26101;
-}
-
-.form input::-webkit-input-placeholder,
-.form textarea::-webkit-input-placeholder {
-	color: #003354;
-}
-
 .form label {
 	font-size: 1.2rem;
 	font-weight: 700;
 	margin-left: 2rem;
-	margin-top: 0.7rem;
+	margin-top: 0.3rem;
 	display: block;
 	transition: all 0.3s;
 	color: #f26101;
@@ -120,4 +96,9 @@
 @keyframes modalopen{
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+.btn-CTA-registrering-container{
+	display: flex;
+	justify-content: flex-end;
 }
