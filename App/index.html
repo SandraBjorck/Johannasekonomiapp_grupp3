@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/startsida.css" />
+  <link rel="stylesheet" href="css/modal.css" />
   <link rel="stylesheet" href="css/landing-page-media-queries.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,8 +36,8 @@
               Sign up for <span class="i">i</span><span class="budget">Budget</span> now!
             </p>
             <div class="hero-buttons">
-              <button class="btn-signup"><a href="regga.html">Sign Up</a></button>
-              <button class="btn-login">Log In</button>
+              <button class="btn-CTA" id="signup-modal">Sign Up</button>
+              <button class="btn-secondary">Log In</button>
             </div>
           </div>
           <div class="right-column">
@@ -186,6 +187,38 @@
       <img class="logo" src="images/iBudget_Logo_2.svg" alt="Company logo" />
       <span><small>&copy; 2021 all rights reserved</small></span>
     </footer>
+  </div>
+
+  <div id="reggaModal" class="modal">
+    <div class="reggaModal-content">
+      <div class="registrerings-container">
+        <form class="form">
+          <div class="form-group">
+            <input type="text" id="fullname" name="fullemail" placeholder="Your Fullname" />
+            <label for="fullname">Fullname</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" name="email" pattern="^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$"
+              placeholder="Your Email" />
+            <label for="email">Email</label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="userName" name="username" placeholder="Your Username" />
+            <label for="userName">Username</label>
+          </div>
+
+          <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="Your Password"
+              pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])([^\s]){8,16}" />
+            <label for="password">Your password</label>
+          </div>
+
+          <button type="submit" class="btn-CTA">Send</button>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="js/index.js"></script>
 </body>

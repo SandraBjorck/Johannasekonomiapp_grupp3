@@ -7,26 +7,36 @@
 	--BGpage: #e0e0e0;
 }
 
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0; 
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.reggaModal-content{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 40%;
+    box-shadow:
+    0 5px 8px 0 rgba(0,0,0,0.2),
+    0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
 /* Page container styles */
 .registrerings-container {
 	display: flex;
 	justify-content: center;
 }
 
-/* Button */
-.btn {
-	background-color: var(--CTA);
-	color: var(--secondary);
-	font-size: 1.25em;
-	padding: 10px 25px;
-	border: 1px solid var(--CTA);
-	border-radius: 2px;
-	outline: none;
-}
-
-.btn:hover {
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
-}
 
 /* Form */
 .form > .form-group {
@@ -99,4 +109,9 @@
 .form input:focus::-webkit-input-placeholder,
 .form textarea:focus::-webkit-input-placeholder {
 	color: transparent;
+}
+
+@keyframes modalopen{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }

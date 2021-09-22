@@ -47,6 +47,39 @@
   p {
     font-size: clamp(1rem, 2.5vw, 2rem);
   }
+
+  button {
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  font-size: 1.3rem;
+  border: none;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.3);
+}
+
+button:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-CTA {
+  background-color: var(--CTA);
+}
+.btn-secondary {
+  background-color: var(--secondary);
+}
   
   .i {
     color: var(--CTA);
