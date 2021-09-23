@@ -37,7 +37,7 @@
             </p>
             <div class="hero-buttons">
               <button class="btn-CTA" id="signup-modal">Sign Up</button>
-              <button class="btn-secondary">Log In</button>
+              <button class="btn-secondary" id="login-modal">Log In</button>
             </div>
           </div>
           <div class="right-column">
@@ -189,9 +189,13 @@
     </footer>
   </div>
 
+  <!-- Modal for registering & sign in -->
   <div id="reggaModal" class="modal">
     <div class="reggaModal-content">
       <div class="registrerings-container">
+        <div class="close-window-container">
+          <img class="close-window" src="images/close-window.svg" alt="a small blue cross for closing the window">
+        </div>
         <form class="form">
           <div class="form-group">
             <input type="text" id="fullname" name="fullemail" placeholder="Your Fullname" />
@@ -214,9 +218,9 @@
               pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])([^\s]){8,16}" />
             <label for="password">Your password</label>
           </div>
-        <div class="btn-CTA-registrering-container">
-          <button type="submit" class="btn-CTA">Confirm</button>
-        </div>
+          <div class="btn-CTA-registrering-container">
+            <button type="submit" class="btn-CTA">Confirm</button>
+          </div>
         </form>
       </div>
     </div>

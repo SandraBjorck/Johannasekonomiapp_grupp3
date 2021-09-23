@@ -81,17 +81,32 @@ a{
   background-color: var(--secondary);
 }
   
-  .i {
-    color: var(--CTA);
-    font-weight: 700;
-  }
+.i {
+   color: var(--CTA);
+   font-weight: 700;
+}
   
-  .budget {
-    font-family: "Bauhaus 93";
-    color: var(--secondary);
-  }
+.budget {
+  font-family: "Bauhaus 93";
+  color: var(--secondary);
+}
 
-  .noscroll{
-    overflow: hidden;
-  }
+.noscroll{
+  overflow: hidden;
+}
+
+.close-window-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-window{
+  width: 40px;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}  
+
+.close-window:hover{
+  transform: scale(1.1);
+}  
   
