@@ -1,40 +1,39 @@
-
 /* nav */
 .logo {
-  height: 3rem;
+	height: 3rem;
 }
 
 .logo-container {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .nav-container {
-  border-bottom: 1px solid var(--BGcolour2);
+	border-bottom: 1px solid var(--BGcolour2);
 }
 
 /*hero-related*/
 .first-page-container {
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100% - 5rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100% - 5rem);
 }
 
 .hero-left-column {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .hero,
@@ -45,136 +44,134 @@
 .testemonials,
 .card-container,
 footer {
-  display: flex;
-  max-width: 1100px;
-  margin: 0 auto;
+	display: flex;
+	max-width: 1100px;
+	margin: 0 auto;
 }
 
 .left-column,
 .right-column {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 3rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 3rem;
 }
 
 .hero-buttons {
-  display: flex;
-  gap: 2rem;
+	display: flex;
+	gap: 2rem;
 }
 
-
-
 .hero-image {
-  width: 100%;
+	width: 100%;
 }
 
 .hero-h2 {
-  margin-top: 3rem;
-  text-align: center;
+	margin-top: 3rem;
+	text-align: center;
 }
 
 /*bouncing-arrow animation*/
 
 .arrow {
-  width: 2.5rem;
-  height: 2.5rem;
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
 }
 
 .bounce {
-  animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-1.5rem);
-  }
-  60% {
-    transform: translateY(-1rem);
-  }
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-1.5rem);
+	}
+	60% {
+		transform: translateY(-1rem);
+	}
 }
 
 /* piggybank section */
 
 .section-image {
-  width: 75%;
+	width: 75%;
 }
 
 .piggybank-section {
-  position: relative; /* Waves */
+	position: relative; /* Waves */
 }
 
 /* https://app.haikei.app/ */
 .waves {
-  /* Waves */
-  aspect-ratio: 960/200;
-  background-image: url(../images/layered-waves-new.svg);
-  position: absolute;
-  top: -110px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+	/* Waves */
+	aspect-ratio: 960/200;
+	background-image: url(../images/layered-waves-new.svg);
+	position: absolute;
+	top: -110px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 
-  /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
-  background-size: cover;
+	/* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+	background-size: cover;
 }
 
 .piggybank {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 
 .piggybank-container {
-  background-color: var(--BGcolour1);
+	background-color: var(--BGcolour1);
 }
 
 .piggybank .right-column {
-  justify-content: space-evenly;
-  z-index: 1;
+	justify-content: space-evenly;
+	z-index: 1;
 }
 
 .piggybank .left-column {
-  z-index: 1;
+	z-index: 1;
 }
 
 /*spending section*/
 .spending {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 
 .spending .left-column {
-  justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 /* sharing section */
 .sharing {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 .sharing-container {
-  background-color: var(--BGcolour1);
+	background-color: var(--BGcolour1);
 }
 .sharing .right-column {
-  justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 /*spending section*/
 
 .responsive {
-  padding: 3rem 0;
+	padding: 3rem 0;
 }
 
 .responsive .left-column {
-  justify-content: space-evenly;
+	justify-content: space-evenly;
 }
 
 /* section containers 50% height and centring of content  */
@@ -185,83 +182,82 @@ footer {
 .responsive-container,
 .testemonials-container,
 .card-container {
-  min-height: 300px;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-height: 300px;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Testemonials */
 .testemonials-container {
-  background-color: #6f7099;
+	background-color: #6f7099;
 }
 
 .testemonials {
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-evenly;
-  height: 100%;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-evenly;
+	height: 100%;
 }
 
 .testemonials h2,
 .testemonials p {
-  color: white;
+	color: white;
 }
 
 /* Testimonials cards */
 .card-container {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 .card {
-  display: grid;
-  grid-template-areas:
-    "pic tit"
-    "rec rec";
-  grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-areas:
+		'pic tit'
+		'rec rec';
+	grid-template-columns: 1fr 1fr;
 
-  place-items: center;
-  width: 320px;
-  height: 200px;
-  /* neumorphism */
-  border-radius: 10px;
-  background: #e0e0e0;
-  box-shadow: 20px 20px 45px #bebebe, -20px -20px 45px #ffffff;
-  padding: 1rem;
+	place-items: center;
+	width: 320px;
+	height: 200px;
+	/* neumorphism */
+	border-radius: 10px;
+	background: #e0e0e0;
+	box-shadow: 20px 20px 45px #bebebe, -20px -20px 45px #ffffff;
+	padding: 1rem;
 }
 
 .card img {
-  grid-area: pic;
-  border: 4px solid var(--primary);
-  width: 130px;
-  border-radius: 40px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+	grid-area: pic;
+	border: 4px solid var(--primary);
+	width: 130px;
+	border-radius: 40px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .card h3 {
-  color: var(--secondary);
-  grid-area: tit;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+	color: var(--secondary);
+	grid-area: tit;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .card p {
-  grid-area: rec;
-  font-size: 1rem;
-  height: 100%;
-  padding-top: 1rem;
-  text-align: center;
+	grid-area: rec;
+	font-size: 1rem;
+	height: 100%;
+	padding-top: 1rem;
+	text-align: center;
 }
 
 /* footer */
 .footer-container {
-  border-top: 1px solid var(--BGcolour2);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+	border-top: 1px solid var(--BGcolour2);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 footer {
-  justify-content: space-between;
-  align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
-

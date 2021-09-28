@@ -1,112 +1,205 @@
 @font-face {
-    font-family: "Bauhaus 93";
-    src: url("fonts/@font-face/Bauhaus.woff2") format("woff2"),
-      url("fonts/@font-face/Bauhaus.woff") format("woff"),
-      url("fonts/@font-face/Bauhaus.ttf") format("truetype");
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  :root {
-    --secondary: #003354;
-    --primary: #91bed4;
-    --BGcolour1: #d9e8f5;
-    --BGcolour2: #999;
-    --CTA: #f26101;
-    --BGpage: #e0e0e0;
-  }
-  
-  body {
-    background-color: var(--BGpage);
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  h1,
-  h2,
-  p {
-    color: var(--secondary);
-  }
-  
-  h1 {
-    /* Clamp gives us the ability to make our font sizing responsive with setting a min-size, max-width and a size that the font want's to be in  */
-    font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: clamp(1.2rem, 2.5vw + 1rem, 2.5rem);
-    font-weight: 700;
-  }
-  
-  p {
-    font-size: clamp(1rem, 2.5vw, 2rem);
-  }
+	font-family: 'Bauhaus 93';
+	src: url('fonts/@font-face/Bauhaus.woff2') format('woff2'),
+		url('fonts/@font-face/Bauhaus.woff') format('woff'),
+		url('fonts/@font-face/Bauhaus.ttf') format('truetype');
+}
 
-  button {
-  color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 5rem;
-  font-size: 1.3rem;
-  border: none;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--secondary: #003354;
+	--primary: #91bed4;
+	--BGcolour1: #d9e8f5;
+	--BGcolour2: #999;
+	--CTA: #f26101;
+	--BGpage: #e0e0e0;
+}
+
+body {
+	background-color: var(--BGpage);
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+p {
+	color: var(--secondary);
+}
+
+h1 {
+	/* Clamp gives us the ability to make our font sizing responsive with setting a min-size, max-width and a size that the font want's to be in  */
+	font-size: clamp(1.5rem, 2.5vw + 1rem, 3rem);
+	font-weight: 700;
+}
+
+h2 {
+	font-size: clamp(1.2rem, 2.5vw + 1rem, 2.5rem);
+	font-weight: 700;
+}
+
+p {
+	font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+button {
+	color: #fff;
+	padding: 1rem 3rem;
+	border-radius: 5rem;
+	font-size: 1.3rem;
+	border: none;
+	box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 button:hover {
-  filter: brightness(1.3);
+	filter: brightness(1.3);
 }
 
 button:active {
-  box-shadow: none;
-  transform: scale(0.95);
+	box-shadow: none;
+	transform: scale(0.95);
 }
 
-a{
-  text-decoration: none;
-  color: inherit;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .btn-CTA {
-  background-color: var(--CTA);
+	background-color: var(--CTA);
 }
 .btn-secondary {
-  background-color: var(--secondary);
+	background-color: var(--secondary);
 }
-  
+
 .i {
-   color: var(--CTA);
-   font-weight: 700;
+	color: var(--CTA);
+	font-weight: 700;
 }
-  
+
 .budget {
-  font-family: "Bauhaus 93";
-  color: var(--secondary);
+	font-family: 'Bauhaus 93';
+	color: var(--secondary);
 }
 
-.noscroll{
-  overflow: hidden;
+.noscroll {
+	overflow: hidden;
 }
 
-.close-window-container{
-  display: flex;
-  justify-content: flex-end;
+.close-window-container {
+	display: flex;
+	justify-content: flex-end;
 }
 
-.close-window{
-  width: 40px;
-  cursor: pointer;
-  transition: transform ease 0.5s;
-}  
+.close-window {
+	width: 40px;
+	cursor: pointer;
+	transition: transform ease 0.5s;
+}
 
-.close-window:hover{
-  transform: scale(1.1);
-}  
-  
+.close-window:hover {
+	transform: scale(1.1);
+}
+
+/* Confirmation */
+
+.popup {
+	position: relative;
+}
+
+.message {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90vw;
+	max-width: 350px;
+	background: white;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+	font-weight: 300;
+	opacity: 0;
+	transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5),
+		opacity 0.2s ease-in-out;
+	pointer-events: none;
+}
+
+.message .check {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(4);
+	width: 120px;
+	height: 110px;
+	background: var(--CTA);
+	color: white;
+	font-size: 3.8rem;
+	padding-top: 10px;
+	border-radius: 50%;
+	opacity: 0;
+	transition: transform 0.2s 0.25s cubic-bezier(0.31, 0.25, 0.5, 1.5),
+		opacity 0.1s 0.25s ease-in-out;
+}
+
+.message .check.scaledown {
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+.message p {
+	font-size: 1.1rem;
+	margin: 25px 0px;
+	padding: 0;
+}
+
+.message p:nth-child(2) {
+	font-size: 2.3rem;
+	margin-top: 40px;
+}
+
+.showMessage {
+	pointer-events: all;
+	opacity: 1;
+}
+
+/* Loader */
+
+.loader-inline {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background-color: #ccc;
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+
+.loader-progress {
+	height: 100%;
+	width: 0%;
+	background-color: var(--CTA);
+}
+
+.start-loading {
+	animation: loading 2s linear forwards;
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

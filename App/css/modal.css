@@ -7,42 +7,40 @@
 	--BGpage: #e0e0e0;
 }
 
-.modal{
-    display:none;
-    position: fixed;
-    z-index: 1;
-    left: 0; 
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-	margin:0 auto;
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.reggaModal-content{
-	display:flex;
+.reggaModal-content {
+	display: flex;
 	justify-content: center;
-	align-items:center;
+	align-items: center;
 	height: 100%;
 }
 
 /* Page container styles */
 .registrerings-container {
-    background-color: #f4f4f4;
-    padding: 30px ;
+	background-color: #f4f4f4;
+	padding: 30px;
 	padding-bottom: 60px;
-    width: 30%;		
+	width: 30%;
 	border-radius: 1rem;
-    box-shadow:
-    0 5px 8px 0 rgba(0,0,0,0.2),
-    0 7px 20px 0 rgba(0,0,0,0.17);
-    animation-name: modalopen;
-    animation-duration: 1s;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+		0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-duration: 1s;
 }
-
 
 /* Form */
 .form > .form-group {
@@ -69,6 +67,10 @@
 	border-bottom: 3px solid #f26101;
 }
 
+.form input:hover {
+	border-bottom: 3px solid #f26101;
+}
+
 .form label {
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -81,30 +83,29 @@
 	opacity: 0;
 }
 
-.form input:focus + label,
-.form textarea:focus + label {
+.form input:focus + label {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0.5rem);
 }
 
-.form input:focus::-webkit-input-placeholder,
-.form textarea:focus::-webkit-input-placeholder {
+.form input:focus::-webkit-input-placeholder {
 	color: transparent;
 }
 
-@keyframes modalopen{
-    from{opacity: 0;}
-    to{opacity: 1;}
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.btn-CTA-registrering-container{
+.btn-CTA-registrering-container {
 	display: flex;
 	justify-content: flex-end;
 }
 
-
-@media (max-width: 1200px){
-
-
+@media (max-width: 1200px) {
 }
