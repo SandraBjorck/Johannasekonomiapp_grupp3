@@ -35,8 +35,9 @@ function openModal(e) {
 // Function to close modal
 function closeModal() {
 	document.body.classList.remove('noscroll');
-	form.prepend(fullNameGroup);
 	form.prepend(emailGroup);
+	form.prepend(fullNameGroup);
+
 
 	modal.style.display = 'none';
 }
@@ -49,10 +50,11 @@ function handleFormSubmit(e) {
 		// SignUp Logic
 		showConfirmation();
 		setTimeout(() => {
-			location.href = '/app.html';
+			location.href = '/membersLanding.html';
 		}, 2000);
 	} else {
 		// Login logic
+		location.href = '/membersLanding.html';
 	}
 }
 
@@ -65,4 +67,4 @@ function showConfirmation() {
 		.querySelector('.loader-progress')
 		.classList.add('start-loading');
 }
-1;
+
